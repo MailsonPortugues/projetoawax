@@ -54,4 +54,15 @@ header {
 .menu li a:hover,
 .menu .active a {
   border-bottom: 4px solid #b28756;
+  color: #ccc;
+}
+
+.banner {
+  height: calc(
+    100vh - 100px
+  ); /* Desconta o espaço do Menu e completa o espaço da tela */
+  background-color: #333;
+  background-image: url("../images/bg.jpg");
+  background-size: cover; /* Ajusta o tamanho da imagem, de forma que ela preencha todo o espaço da tela*/
+  background-position: bottom; /* Prioriza a parte inferior da imagem */
 }

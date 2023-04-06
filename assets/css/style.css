@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+header {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+.header {
+  max-width: 1140px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+.logoimg {
+  width: 80px;
+  height: 80px;
+  background-color: #b28756;
+}
+.menu {
+  flex: 1; /* Ocupa todo espaço disponível */
+  display: flex;
+  justify-content: flex-end; /* Centraliza o conteúdo à direita da div */
+}
+.menu ul,
+.menu li {
+  list-style: none; /* Retira os pontinhos ao lado no nome */
+}
+.menu ul {
+  display: flex; /* Faz com que um menu fique ao lado do outro */
+}
+.menu li a {
+  color: white;
+  text-transform: uppercase; /* Transforma as letras em maiúsculas */
+  font-weight: 600;
+  text-decoration: none; /* Retira a linha abaixo do nome */
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  align-items: center;
+  border-bottom: 4px solid black;
+}
+.menu li a:hover,
+.menu .active a {
+  border-bottom: 4px solid #b28756;
+}
